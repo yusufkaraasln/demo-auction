@@ -20,8 +20,7 @@ function App() {
   const [auctionDetails, setAuctionDetails] = useState({});
 
   useEffect(() => {
-    const socket = io("34.68.138.79", {
-    });
+    const socket = io("https://acuction-api-demo.onrender.com/", );
     socketRef.current = socket;
 
     const onConnected = () => setIsConnected(true);
