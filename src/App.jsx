@@ -20,7 +20,7 @@ function App() {
   const [auctionDetails, setAuctionDetails] = useState({});
 
   useEffect(() => {
-    const socket = io("http://34.68.138.79");
+    const socket = io("https://acuction-api-demo-git-master-yusufkaraaslns-projects.vercel.app");
     socketRef.current = socket;
 
     const onConnected = () => setIsConnected(true);
